@@ -5,7 +5,6 @@ library(raster)
 shp = readOGR("input vector file")
 ras.files = Sys.glob('path to files/2010*.nc')
 out.dir =  "/home/satyukt/Projects/1000/backend/Noostar_ndvi/SMN_karnataka/agrimasked_liss"
-udaviR::ensureDir(out.dir)
 lulc <- "liss lulc" # liss lulc 
 #for modis add get_subdatasets with band index
 r.lulc = get_subdatasets(lulc)
